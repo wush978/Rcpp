@@ -31,6 +31,7 @@ if (.runThisTest) {
         checkEquals(f2(1:10), var(1:10))
         checkEquals(f3(1:10 + (1 + 1i)), var(1:10 + (1 + 1i)))
         checkEquals(f4(c(T, F, T, F, T)), var(c(T, F, T, F, T)))
+        checkEquals(f1((1:10) + 1e10), var((1:10) + 1e10))
     }
 
 }
